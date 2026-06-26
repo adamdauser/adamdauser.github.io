@@ -1,0 +1,139 @@
+Adam Dauser personal website notes
+==================================
+
+Purpose
+-------
+This repository contains my academic personal website.
+The site should read as a professional mathematics website, not as a landing
+page or portfolio template.
+
+Structure
+---------
+The public website lives at the repository root for GitHub Pages.
+
+Main pages:
+- index.html: homepage, short bio, selected papers, selected talks, current
+  research, and contact details.
+- publications.html: publications and preprints, with short summaries and
+  arXiv/PDF links.
+- notes.html: expository notes and public external notes.
+- cv.html: HTML CV.
+- cv/adam-dauser-cv.tex: editable LaTeX source for the PDF CV.
+- cv/adam-dauser-cv.pdf: downloadable PDF CV linked from the website.
+
+Design conventions
+------------------
+Keep the design minimal, warm, and text-forward.
+
+Use the existing colour palette:
+- background: #faf8f5
+- text: #24211f
+- muted text: #665f5a
+- rules/borders: #d8cec8
+- links: #a95f72
+- link hover background: #f2dce2
+
+Use Georgia or a similar serif font for body text and headings. Use a small
+monospace style for dates, contact labels, and navigation pills.
+
+Keep layout narrow and readable. The website uses a simple left rule and
+spacious sections rather than cards, hero blocks, or decorative elements.
+
+Avoid marketing language. The first screen should communicate who I am and
+what I work on, without sounding promotional.
+
+Content conventions
+-------------------
+Use title case for mathematical research areas in the short interest line:
+Arithmetic Geometry, Geometric Representation Theory, Higher Category Theory,
+and Six-Functor Formalisms.
+
+Link people only the first time they appear prominently on a page. Repeated
+links to the same person on the same page look distracting.
+
+Do not include placeholders. Empty lists are preferable to placeholder entries.
+
+Use "Preprint, submitted" for submitted papers when the journal should not be
+named.
+
+For joint work with Josefien Kuijper, use:
+Joint work with Josefien Kuijper
+with Josefien's name linked to:
+https://sites.google.com/view/josefienkuijper
+
+For the early university-study entry, use:
+Fruehstudium in Mathematics
+In HTML/LaTeX where UTF-8 is already used, the displayed spelling may be:
+Frühstudium in Mathematics
+
+For the MPI contact block, include:
+Max Planck Institute for Mathematics
+Office 404
+Vivatsgasse 7
+53111 Bonn
+Germany
+
+Do not link the institute name in the contact section.
+
+CV conventions
+--------------
+The HTML CV and PDF CV should contain the same substantive information.
+The PDF CV is generated from cv/adam-dauser-cv.tex and linked as
+cv/adam-dauser-cv.pdf.
+
+The PDF CV should follow the same visual language as the website: warm
+off-white background, muted pink links, serif typography, thin section rules,
+and a fixed label column for years/contact labels.
+
+Date ranges in the PDF CV should use proper en dashes, not literal double
+hyphens.
+
+External links of record
+------------------------
+MPI graduate people list:
+https://www.mpim-bonn.mpg.de/peoplelist?plgroup=graduates
+
+Peter Scholze:
+https://people.mpim-bonn.mpg.de/scholze/
+
+Alexander Ivanov:
+https://math.ruhr-uni-bochum.de/fakultaet/arbeitsbereiche/algebra/research-team-ivanov/team/prof-dr-alexander-ivanov/
+
+Josefien Kuijper:
+https://sites.google.com/view/josefienkuijper
+
+Uniqueness of six-functor formalisms:
+https://arxiv.org/abs/2412.15780
+https://arxiv.org/pdf/2412.15780
+
+Strasbourg workshop:
+https://irma.math.unistra.fr/~lfu/Activities/Conference-Arakelov-and-Condensed.html
+
+Adam's Strasbourg notes:
+https://lebras.perso.math.cnrs.fr/Notes_Dauser.pdf
+
+Full Strasbourg workshop notes:
+https://lebras.perso.math.cnrs.fr/Notes_workshop_all.pdf
+
+Utrecht (infinity,n)-categories conference:
+https://sites.google.com/view/inftyncategories
+
+Oberwolfach report page:
+https://publications.mfo.de/handle/mfo/4342
+
+Oberwolfach report PDF:
+https://publications.mfo.de/bitstream/handle/mfo/4342/OWR_2025_29.pdf?isAllowed=y&sequence=1
+
+Coherent Springer theory and the categorical Deligne-Langlands correspondence:
+https://arxiv.org/abs/2010.02321
+
+Maintenance
+-----------
+Check all links still work and point to the correct websites.
+
+Check the PDF CV and HTML CV agree.
+
+Check social media preview and Google search summary accurately reflect the
+website.
+
+Last checked: June 26, 2026.

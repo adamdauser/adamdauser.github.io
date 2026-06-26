@@ -1,0 +1,144 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1.05in]{geometry}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{eso-pic}
+
+\definecolor{sitebg}{HTML}{FAF8F5}
+\definecolor{sitetext}{HTML}{24211F}
+\definecolor{sitemuted}{HTML}{665F5A}
+\definecolor{siteline}{HTML}{D8CEC8}
+\definecolor{sitelink}{HTML}{A95F72}
+
+\IfFontExistsTF{Georgia}
+  {\setmainfont{Georgia}}
+  {\setmainfont{TeX Gyre Pagella}}
+\IfFontExistsTF{Menlo}
+  {\setmonofont{Menlo}}
+  {\setmonofont{Latin Modern Mono}}
+
+\pagecolor{sitebg}
+\color{sitetext}
+\AddToShipoutPictureBG*{\AtPageLowerLeft{\color{sitebg}\rule{\paperwidth}{\paperheight}}}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=sitelink,
+  linkcolor=sitelink
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\pagestyle{empty}
+
+\newlength{\cvlabelwidth}
+\newlength{\cvlabelsep}
+\setlength{\cvlabelwidth}{0.95in}
+\setlength{\cvlabelsep}{0.18in}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{1.35em}%
+  {\color{siteline}\hrule height 0.4pt}%
+  \vspace{0.65em}%
+  {\large #1}\par%
+  \vspace{0.35em}%
+}
+\newenvironment{cvitems}{%
+  \begin{description}[
+    leftmargin=\dimexpr\cvlabelwidth+\cvlabelsep\relax,
+    labelwidth=\cvlabelwidth,
+    labelsep=\cvlabelsep,
+    align=left,
+    font=\normalfont\small\ttfamily\color{sitemuted},
+    itemsep=0.58em,
+    parsep=0pt,
+    topsep=0pt,
+    partopsep=0pt
+  ]%
+}{%
+  \end{description}%
+}
+\newcommand{\entry}[3]{%
+  \item[#1]\textbf{#2}\\[-0.02em]{\color{sitemuted}#3}%
+}
+\newcommand{\entrylinks}[4]{%
+  \item[#1]\textbf{#2}\\[-0.02em]{\color{sitemuted}#3}\\[-0.04em]{\small #4}%
+}
+\newcommand{\contactentry}[2]{%
+  \item[#1]#2%
+}
+
+\begin{document}
+
+{\Large Adam Dauser}\par
+{\color{sitemuted}Mathematician · Researcher}\par
+\vspace{0.75em}
+{\small
+\begin{cvitems}
+  \contactentry{Email}{\href{mailto:dauser@mpim-bonn.mpg.de}{dauser@mpim-bonn.mpg.de}}
+  \contactentry{Address}{{\color{sitemuted}Max Planck Institute for Mathematics\\Office 404\\Vivatsgasse 7, 53111 Bonn, Germany}}
+\end{cvitems}
+}
+
+\cvsection{Education}
+\begin{cvitems}
+\entry{2022–}{Ph.D. candidate in Mathematics}{Max Planck Institute for Mathematics and University of Bonn · advisors: Alexander Ivanov and Peter Scholze}
+\entry{2022}{M.Sc. in Mathematics}{University of Bonn}
+\entry{2020}{B.Sc. in Mathematics (with a minor in economics)}{University of Bonn}
+\entry{2016–2018}{Frühstudium in Mathematics}{Friedrich-Alexander University Erlangen-Nürnberg}
+\end{cvitems}
+
+\cvsection{Research Interests}
+Arithmetic Geometry, Geometric Representation Theory, Higher Category Theory, and Six-Functor Formalisms.
+
+\cvsection{Academic Theses}
+\begin{cvitems}
+\entry{2022–}{Categorical Deligne-Lusztig theory}{Ph.D. research project · Max Planck Institute for Mathematics and University of Bonn · advisors: Alexander Ivanov and Peter Scholze}
+\entry{2021–2022}{Deligne-Lusztig stacks}{M.Sc. thesis · University of Bonn · advisors: Alexander Ivanov and Peter Scholze}
+\entry{2020}{Poincaré Duality in Étale Cohomology}{B.Sc. thesis · University of Bonn · advisors: Alexander Ivanov and Peter Scholze}
+\end{cvitems}
+
+\cvsection{Publications}
+\begin{cvitems}
+\entrylinks{2025}{Uniqueness of six-functor formalisms}{Joint work with Josefien Kuijper · Preprint, submitted}{\href{https://arxiv.org/abs/2412.15780}{arXiv} · \href{https://arxiv.org/pdf/2412.15780}{PDF}}
+\end{cvitems}
+
+\cvsection{Talks}
+\begin{cvitems}
+\entry{2026}{Hyodo-Kato cohomology}{ARGOS seminar: Analytic de Rham stacks, University of Bonn and MPIM}
+\entry{2025}{Twisted Six Functor Formalisms}{Mittagsseminar, University of Münster}
+\entry{2025}{Higher categorical methods}{IMPRS seminar, Max Planck Institute for Mathematics}
+\entry{2025}{Six functor formalism of analytic stacks and examples}{Arakelov Geometry and Condensed Mathematics, Strasbourg · two talks: analytic stacks; Betti and de Rham stacks}
+\entry{2024}{Higher categories of cohomological correspondences}{Conference on (∞, n)-Categories, Utrecht University}
+\entry{2024}{Higher Traces}{Oberseminar Lie-Theorie, Ruhr University Bochum}
+\entry{2024}{Analytic Riemann-Hilbert}{ARGOS seminar: Real Local Langlands, University of Bonn and MPIM}
+\entry{2024}{Finitary arc sheaves and Berkovich motives}{ARGOS seminar: Berkovich Motives, University of Bonn and MPIM}
+\entry{2022}{The big lines of proof in \href{https://arxiv.org/abs/2010.02321}{Coherent Springer theory and the categorical Deligne-Langlands correspondence}}{ARGOS seminar: Categorical Local Langlands, University of Bonn}
+\entry{2022}{Torus fixed points on bow varieties}{Seminar in Representation Theory: Bow varieties, University of Bonn}
+\entry{2021}{The Kawai-Yoshioka formula}{Seminar on Donaldson-Thomas theory, University of Bonn}
+\entry{2021}{Moduli of Curves}{ARGOS seminar: Arithmetic Bigness and Uniform Bogomolov, University of Bonn}
+\entry{2021}{The Torelli theorem}{Seminar in Algebraic Geometry: Jacobian of curves and abelian varieties, University of Bonn}
+\end{cvitems}
+
+\cvsection{Conferences and Workshops}
+\begin{cvitems}
+\entry{2026}{Higher Category Theory in Geometry and Representation Theory}{Mini-workshop, Mathematisches Forschungsinstitut Oberwolfach · upcoming}
+\entry{2025}{Arakelov Geometry and Condensed Mathematics}{IRMA, University of Strasbourg · speaker}
+\entrylinks{2025}{Non-Archimedean Geometry and Applications}{Mathematisches Forschungsinstitut Oberwolfach · participant and reporter}{\href{https://publications.mfo.de/handle/mfo/4342}{MFO page} · \href{https://publications.mfo.de/bitstream/handle/mfo/4342/OWR_2025_29.pdf?isAllowed=y&sequence=1}{report}}
+\entry{2024}{Conference on (∞, n)-Categories}{Utrecht University · contributed speaker}
+\end{cvitems}
+
+\cvsection{Teaching}
+\begin{cvitems}
+\entry{2024–2025}{Assistant, Representation Theory I}{Lecture course on compact Lie groups taught by Tasho Kaletha}
+\entry{2024}{Tutor, Advanced Algebra I}{Lecture course on elliptic curves taught by Andreas Mihatsch}
+\entry{2023–2024}{Tutor, Algebraic Geometry I}{Lecture course taught by Johannes Anschütz}
+\entry{2022}{Tutor, Introduction to Geometry and Topology}{Lecture course taught by Koen van den Dungen}
+\entry{2019–2020}{Tutor, Analysis I}{Lecture course taught by Sergio Conti}
+\end{cvitems}
+
+\end{document}
