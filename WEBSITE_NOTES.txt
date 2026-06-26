@@ -18,6 +18,7 @@ Main pages:
   arXiv/PDF links.
 - notes.html: expository notes and public external notes.
 - cv.html: HTML CV.
+- impressum.html: German Impressum / legal notice.
 - cv/adam-dauser-cv.tex: editable LaTeX source for the PDF CV.
 - cv/adam-dauser-cv.pdf: downloadable PDF CV linked from the website.
 
@@ -74,6 +75,13 @@ Vivatsgasse 7
 Germany
 
 Do not link the institute name in the contact section.
+
+For the Impressum, keep the page in German and link it discreetly from the
+footer. It should include the headings "Angaben gemaess § 5 DDG" and
+"Verantwortlich fuer den Inhalt", Adam's name, MPI email address, and the same
+substantive address as the website contact block, written in German:
+Max-Planck-Institut fuer Mathematik, Buero 404, Vivatsgasse 7, 53111 Bonn,
+Deutschland.
 
 CV conventions
 --------------
@@ -132,6 +140,8 @@ Maintenance
 Check all links still work and point to the correct websites.
 
 Check the PDF CV and HTML CV agree.
+
+Check that the Impressum address and the website contact address agree.
 
 Check social media preview and Google search summary accurately reflect the
 website.
